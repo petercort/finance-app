@@ -23,9 +23,11 @@ jobs:
 
     - name: Build
       run: |
+        cd ./client
         npm install
     - name: Actually Build
       run: |
+        cd ./client
         npm build
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4.3.3
